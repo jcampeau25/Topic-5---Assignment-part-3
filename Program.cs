@@ -77,12 +77,15 @@
                 Console.WriteLine("That is incorrect. The correct answer is D. Hydrogen");
 
             //Score
-            finalScore = score / 4;
+            finalScore = (score * 100) / 4;
             Console.WriteLine();
-            Console.WriteLine("Your final score was " + score + "/4 or " + finalScore.ToString("P"));
+            Console.WriteLine("Your final score was " + score + "/4 or " + finalScore + "%");
             if (score == 0)
-                Console.WriteLine("You didn't get any right! Bettur luck next time.");
+                Console.WriteLine("You didn't get any right! Better luck next time.");
             else if (score == 4)
                 Console.WriteLine("Wow you got perfect! Good job");
+        }
     }
 }
+
+    
